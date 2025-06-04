@@ -4,60 +4,29 @@ This repository contains the code, models, and data used in my master's thesis p
 
 ## 📁 Project Structure
 
-<details>
-<summary>Click to expand</summary>
+- **Data Preparation**: MATLAB `.mat` files in `/Data/` contain preprocessed inputs and outputs for different stages:
+  - `Input_train.mat`, `Input_valid.mat`, `Input_test.mat`
+  - `Output_train.mat`, `Output_valid.mat`, `Output_test.mat`
+  - `*_global.mat` files for full dataset reference
 
-Master thesis final codes/
-├── Data/                      # All datasets in MATLAB .mat format
-│   ├── Input_global.mat
-│   ├── Input_train.mat
-│   ├── Input_valid.mat
-│   ├── Input_test.mat
-│   ├── Output_global.mat
-│   ├── Output_train.mat
-│   ├── Output_valid.mat
-│   └── Output_test.mat
+- **Model Training**: Surrogate models are trained using various architectures in `/Models/`:
+  - **DNN**: Standard deep neural networks
+  - **BNN**: Bayesian neural networks with Monte Carlo dropout
+  - **GP-DKL**: Gaussian Process with Deep Kernel Learning
+  - **PySR**: Symbolic regression using PySR
+  - Trained models are saved as `.pth` and `.h5` files
 
-├── Models/                    # Model training scripts and saved models
-│   ├── BNN_MC.py
-│   ├── GP-DKL.py
-│   ├── Hyperband_and_training.py
-│   ├── PySRegressor.py
-│   ├── model_BNN_MC_Purity.pth
-│   ├── model_BNN_MC_Recovery.pth
-│   ├── model_GNN_purity.pth
-│   ├── model_GNN_recovery.pth
-│   ├── model_Purity.h5
-│   ├── model_Recovery.h5
-│   └── PSA/                    # Hyperparameter tuning logs
+- **Optimization**: Located in `/Optimization/`, this includes:
+  - Multi-objective Particle Swarm Optimization (PSO)
+  - Custom scripts for optimizing each surrogate model
+  - `.mat` files with optimization results
 
-├── Optimization/              # Multi-objective optimization scripts and results
-│   ├── MOFE_PSO.py
-│   ├── Optimization.py
-│   ├── Optimization_BNN_MC.py
-│   ├── Optimization_GP-DKL.py
-│   ├── Optimization_regression.py
-│   ├── PSO_BNN_100p_100i_purity_recovery_MC.mat
-│   ├── PSO_GNN_100p_100i_purity_recovery.mat
-│   ├── PSO_NN_100p_100i_purity_recovery.mat
-│   ├── PSO_reg_100p_100i_purity_recovery.mat
-│   └── __pycache__/
+- **Validation**: The `/Validation/` folder includes:
+  - Parity plots comparing surrogate models to first-principles model
+  - Evaluation metrics (MAE, MSE)
+  - Pareto front comparisons and result summaries
 
-├── Validation/                # Evaluation, metrics and visualizations
-│   ├── BNN_MSE_MAE_FIRST_PRINCIPLE.py   #histograms of BNNs vs first-principles model
-│   ├── GP-DKL_MSE_MAE_First.py          #histograms of GP-DKLs vs first-principles model
-│   ├── MAE_MSE_DNN.py                   #histograms of DNNs vs first-principles model
-│   ├── MAE_MSE_reg.py                   #histograms of SR vs first-principles model
-│   ├── Pareto Forts.py                  #the optimizations from all surrogate models vs optimization first-principles model
-│   ├── Pareto front BNN.py
-│   ├── Results_BNN_first_principle_model.mat
-│   ├── Results_GNN_first_principle_model.mat
-│   ├── Results_reg_first_principle_model.mat
-│   ├── Results.mat
-│   ├── Optimization.mat
-│   └── Inputs all.py                     #Inputs form all surrogate models and first-principles model plottet together
-
-
+---
 
 ## 📊 Description
 
