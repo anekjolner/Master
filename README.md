@@ -3,6 +3,10 @@
 This repository contains the code, models, and data used in my master's thesis project focused on developing, evaluating, and optimizing surrogate models for Pressure Swing Adsorption (PSA) systems using deep learning and symbolic regression.
 
 ## 📁 Project Structure
+
+<details>
+<summary>Click to expand</summary>
+
 Master thesis final codes/
 ├── Data/                      # All datasets in MATLAB .mat format
 │   ├── Input_global.mat
@@ -40,18 +44,18 @@ Master thesis final codes/
 │   └── __pycache__/
 
 ├── Validation/                # Evaluation, metrics and visualizations
-│   ├── BNN_MSE_MAE_FIRST_PRINCIPLE.py #histograms of BNNs vs first-principles model
-│   ├── GP-DKL_MSE_MAE_First.py #histograms of GP-DKLs vs first-principles model
-│   ├── MAE_MSE_DNN.py #histograms of DNNs vs first-principles model
-│   ├── MAE_MSE_reg.py #histograms of SR vs first-principles model
-│   ├── Pareto Forts.py #the optimizations from all surrogate models vs optimization first-principles model
+│   ├── BNN_MSE_MAE_FIRST_PRINCIPLE.py   #histograms of BNNs vs first-principles model
+│   ├── GP-DKL_MSE_MAE_First.py          #histograms of GP-DKLs vs first-principles model
+│   ├── MAE_MSE_DNN.py                   #histograms of DNNs vs first-principles model
+│   ├── MAE_MSE_reg.py                   #histograms of SR vs first-principles model
+│   ├── Pareto Forts.py                  #the optimizations from all surrogate models vs optimization first-principles model
 │   ├── Pareto front BNN.py
 │   ├── Results_BNN_first_principle_model.mat
 │   ├── Results_GNN_first_principle_model.mat
 │   ├── Results_reg_first_principle_model.mat
 │   ├── Results.mat
 │   ├── Optimization.mat
-│   └── Inputs all.py #Inputs form all surrogate models and first-principles model plottet together
+│   └── Inputs all.py                     #Inputs form all surrogate models and first-principles model plottet together
 
 
 
