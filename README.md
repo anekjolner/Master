@@ -48,3 +48,12 @@ To install the required dependencies, use the provided Conda environment:
 conda env create -f environment.yml
 conda activate master
 
+## ⚠️ Disclaimer
+
+This repository is meant as an archive where I can store my code. I hope that even suboptimal code can serve as inspiration for students who also want to explore machine learning.  
+There are many potential improvements in my code, so please be critical and don't assume everything is correct 😉.  
+I hope you find something useful here, and if you have any questions, please don't hesitate to contact me.
+
+[LinkedIn](https://www.linkedin.com/in/ane-kristine-kj%C3%B8lner-a2a42a251/) ·[E-mail] (anekjolner@gmail.com)
+
+
