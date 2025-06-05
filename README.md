@@ -16,16 +16,6 @@ This repository contains the code, models, and data used in my master's thesis p
   - **PySR**: Symbolic regression using PySR
   - Trained models are saved as `.pth` and `.h5` files
 
-- **Optimization**: Located in `/Optimization/`, this includes:
-  - Multi-objective Particle Swarm Optimization (PSO)
-  - Custom scripts for optimizing each surrogate model
-  - `.mat` files with optimization results
-
-- **Validation**: The `/Validation/` folder includes:
-  - Parity plots comparing surrogate models to first-principles model
-  - Evaluation metrics (MAE, MSE)
-  - Pareto front comparisons and result summaries
-
 ---
 
 ## 📊 Description
