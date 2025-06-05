@@ -22,13 +22,10 @@ This repository contains the code, models, and data used in my master's thesis p
 
 - **Data Preparation**: MATLAB `.mat` files in `/Data/` contain preprocessed inputs and outputs for different stages (train/valid/test/global).
 - **Model Training**: Surrogate models are trained using a variety of architectures including:
-  - Deep Neural Networks (DNN)
+  - Deep Neural Networks (DNN) (only the results due to other work related to this code)
   - Bayesian Neural Networks (BNN)
   - Deep Kernel Learning (GP-DKL)
   - Symbolic Regression via PySR
-- **Optimization**: Multi-objective Particle Swarm Optimization (PSO) is used to find optimal operating conditions that balance CO₂ purity and recovery.
-- **Validation**: Includes parity plots and metrics (MAE, MSE) for comparison between model predictions and ground truth.
-
 --
 ## ⚠️ Disclaimer
 
