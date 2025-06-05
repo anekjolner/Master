@@ -39,21 +39,12 @@ This repository contains the code, models, and data used in my master's thesis p
 - **Optimization**: Multi-objective Particle Swarm Optimization (PSO) is used to find optimal operating conditions that balance CO₂ purity and recovery.
 - **Validation**: Includes parity plots and metrics (MAE, MSE) for comparison between model predictions and ground truth.
 
+
 ## ⚙️ Requirements
 
-This project uses:
-
-- Python 3.8+
-- TensorFlow / Keras
-- PyTorch
-- NumPy, SciPy, Matplotlib, Seaborn
-- Plotly (for visualization)
-- `mat73` (for loading MATLAB v7.3 files)
-- `keras-tuner`
-- `PySR` (for symbolic regression)
-- `pymcmcstat` (if applicable for Bayesian analysis)
-
-Install dependencies:
+Run the following command to install all of the packages listed in `environment.yml`.  
+This assumes you have Conda installed; if not, install it first. I recommend using [Miniconda](https://docs.conda.io/en/latest/miniconda.html).
 
 ```bash
-pip install -r requirements.txt
+conda env create -f environment.yml
+
