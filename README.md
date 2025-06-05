@@ -42,9 +42,9 @@ This repository contains the code, models, and data used in my master's thesis p
 
 ## ⚙️ Requirements
 
-Run the following command to install all of the packages listed in `environment.yml`.  
-This assumes you have Conda installed; if not, install it first. I recommend using [Miniconda](https://docs.conda.io/en/latest/miniconda.html).
+To install the required dependencies, use the provided Conda environment:
 
 ```bash
 conda env create -f environment.yml
+conda activate master
 
