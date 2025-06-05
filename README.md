@@ -39,15 +39,6 @@ This repository contains the code, models, and data used in my master's thesis p
 - **Optimization**: Multi-objective Particle Swarm Optimization (PSO) is used to find optimal operating conditions that balance CO₂ purity and recovery.
 - **Validation**: Includes parity plots and metrics (MAE, MSE) for comparison between model predictions and ground truth.
 
-
-## ⚙️ Requirements
-
-To install the required dependencies, use the provided Conda environment:
-
-```bash
-conda env create -f environment.yml
-conda activate master
-
 --
 ## ⚠️ Disclaimer
 
@@ -57,4 +48,13 @@ I hope you find something useful here, and if you have any questions, please don
 
 [LinkedIn](https://www.linkedin.com/in/ane-kristine-kjølner-a2a42a251/) · [E-mail](mailto:anekjolner@gmail.com)
 
+
+
+## ⚙️ Requirements
+
+To install the required dependencies, use the provided Conda environment:
+
+```bash
+conda env create -f environment.yml
+conda activate master
 
